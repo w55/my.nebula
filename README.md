@@ -3,6 +3,6 @@
 <br>
 <b>Nebula</b> animation effect - HTML5 animation of a one big picture.
 <br>
-This example based on <a href="http://www.professorcloud.com/mainsite/canvas-nebula.htm">Experiment - HTML5 Canvas Nebula</a> original work.
+This example based on original work of <b>Professor Cloud</b> <a href="http://www.professorcloud.com/mainsite/canvas-nebula.htm">Experiment - HTML5 Canvas Nebula</a> .
 
 Take a look: <a href="http://u123.somee.com/my.nebula/my.nebula.html">DEMO PAGE</a>.
