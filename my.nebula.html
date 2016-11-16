@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">   
+	
+	<!-- <meta http-equiv="expires" content="0"> -->
+	<!-- <meta http-equiv="pragma" content="no-cache">	    -->
+
+	<meta name="author" content="Victor Alexeev" />
+	<meta name="copyright" content="Victor Alexeev" />
+	<meta name="description" content="Пример использования тега canvas спецификации HTML5.  Nebula effect">
+	<meta name="keywords" content="HTML5, CSS3, canvas, tag, example, sample, тег, пример, Nebula, effect">
+	
+   <title>HTML 5 canvas example. Nebula effect</title>
+
+	
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700' rel='stylesheet' type='text/css'>
+	
+	<link href="css/my.nebula.css" rel="stylesheet" type="text/css" />
+	<!-- <link href="css/my.nebula.min.css" rel="stylesheet" type="text/css" /> -->
+	
+	<!-- <script src="scripts/jquery-1.10.2.min.js"></script> -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>	
+	
+	<script type="text/javascript" src="scripts/my.nebula.js"></script>
+	<!-- <script type="text/javascript" src="scripts/my.nebula.min.js"></script> -->
+</head>
+<body>
+
+	<!--   switcher to show current status info  -->
+	<div id="div_show_info"  class="tooltip">
+		Show Status<span class="tooltiptext">Click to show status info</span>
+	</div>
+	
+	<!--   current status info  -->
+	<div id="div_info"  style="display:none" class="tooltip2">
+		<span class="tooltiptext">Click to hide status info</span>
+		<span id="cur_image">Image=unknown</span>
+		<br>
+		<span id="cur_state">State=stopped</span>
+		<br>		
+		<span id="cur_ini_sizes">Ini: wid=000, hei=000</span>
+		<br>
+		<span id="cur_cur_sizes">Cur: wid=000, hei=000</span>
+		<br>
+		<span id="cur_offsets">Offset: cx=000, cy=000</span>	
+		<br>	
+		<span id="debug_info">debug_info</span>		
+	</div>
+	
+	<div id='maincontent' >
+		<h1 class="site__title">HTML5 Canvas. Nebula Effect</h1>
+		
+		<canvas style="display:none" id="can_input" width="1000" height="800"></canvas>		
+		<canvas style="display:none" id="can_puff" width="500" height="400"></canvas>
+		
+		<div>Click on picture to pause / resume animation</div>		
+		<canvas id="can_output" width="1000"  height="800">*** THIS BROWSER DOES NOT SUPPORT THE CANVAS ELEMENT ***</canvas>
+
+	</div>
+	
+	<div class="wrap">
+	<p class="label">Эффект <span class="site__title">Nebula</span> - послойная анимация одной картинки</p>  
+
+	
+	<form>			
+		<div class="tooltip2">
+			<span class="tooltiptext">Select picture to animate</span>		
+			 <select id="sel_01" class="input input--dropdown">
+				<option value="0" disabled>Picture to animate</option>
+				
+				<option value="img.small/landscape-1-min.jpg">landscape-1</option>
+				<option value="img.small/landscape-2-min.jpg">landscape-2</option>
+				<option value="img.small/landscape-3-min.jpg">landscape-3</option>	
+				
+				<option value="img.small/dance-1-min.jpg">dance-1</option>	
+				<option value="img.small/dance-2-min.jpg">dance-2</option>					
+				
+				<option value="img.small/north shining-1-min.jpg">north shining-1</option>
+				<option value="img.small/north shining-2-min.jpg">north shining-2</option>
+				<option value="img.small/north shining-3-min.jpg">north shining-3</option>
+				<option value="img.small/north shining-4-min.jpg">north shining-4</option>
+				<option value="img.small/north shining-5-min.jpg">north shining-5</option>
+				
+				<option value="img.small/clouds-1-min.jpg">clouds-1</option>
+				<option value="img.small/clouds-2-min.jpg">clouds-2</option>
+				<option value="img.small/clouds-3-min.jpg">clouds-3</option>
+				<option value="img.small/clouds-4-min.jpg">clouds-4</option>
+				<option value="img.small/clouds-5-min.jpg">clouds-5</option>
+				
+				<option value="img.small/nebula-1-min.jpg">nebula-1</option>	
+				<option value="img.small/nebula-2-min.jpg">nebula-2</option>	
+				<option value="img.small/nebula-3-min.jpg">nebula-3</option>	
+				<option value="img.small/nebula-4-min.jpg">nebula-4</option>	
+			</select>
+		</div>
+
+		<div class="tooltip2">
+			<span class="tooltiptext">Select animation speed</span>			
+			<select id="sel_velocity" class="input input--dropdown">
+				<option value="0" disabled>Animation speed</option>
+
+				<option value="100">100 %</option>
+				<option value="80">80 %</option>
+				<option value="60">60 %</option>
+				<option value="40">40 %</option>
+				<option value="30">30 %</option>
+				<option value="20">20 %</option>
+				<option value="10">10 %</option>
+			</select>
+		</div>			
+		
+		<a id="but_stop" class="butt site__title">Pause</a>
+		<a id="but_anim" class="butt site__title">Resume</a>
+    </form>
+    <hr />
+  </div>		
+
+</body>
+</html>
