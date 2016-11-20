@@ -5,4 +5,4 @@
 <br>
 This example based on original work of <b>Professor Cloud</b> <a href="http://www.professorcloud.com/mainsite/canvas-nebula.htm">Experiment - HTML5 Canvas Nebula</a> .
 
-Take a look: <a href="http://u123.webutu.com/my.nebula/my.nebula.html">DEMO PAGE</a>.
+Take a look: <a href="http://w55.webutu.com/my.nebula/my.nebula.html">DEMO PAGE</a>.
